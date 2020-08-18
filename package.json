@@ -1,18 +1,28 @@
 {
   "name": "vue-package-template",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.2",
+  "description": "Vue UI库开发模版",
+  "author": "Murphy573",
+  "private": false,
+  "main": "lib/vue-package-template.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:lib": "npm run lint && vue-cli-service build --target lib --name vue-package-template --dest lib packages/index.js",
+    "lint": "vue-cli-service lint",
+    "publish:npm": "sh build/publish.sh"
   },
-  "dependencies": {
+  "keywords": [
+    "vue",
+    "package",
+    "template"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
-  },
-  "devDependencies": {
+    "vue-router": "^3.2.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
