@@ -1,4 +1,4 @@
-## vue-package-template🏠
+## vue-package-template
 
 ### 介绍
 这是一个基于[vue-cli](https://cli.vuejs.org/zh/guide/)搭建的UI组件库基础开发模板。可以开发公共组件发布到[npm](https://www.npmjs.com/)上，供大家下载使用。
