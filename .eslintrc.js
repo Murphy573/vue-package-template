@@ -18,7 +18,9 @@ module.exports = {
     'prefer-destructuring': 0,
     'no-duplicate-imports': 2,
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
-    'vue/html-quotes': ['error', 'double']
+    'vue/html-quotes': ['error', 'double'],
+    'prefer-const': 0,
+    'no-case-declarations': 0
   },
   parserOptions: {
     parser: 'babel-eslint'
